@@ -1,55 +1,47 @@
-<html>
-<style type="text/css">
-body,td,th {
-	color: #0AF8D0;
-	font-size: 36px;
-}
-	h3{
-		color:#000000;
-		font-size:20px;
-	}
-body {
-	background-color: #FFFFFF;
-	background-image: url(image/1.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-a:link {
-	color: #0AF8D0;
-}
-a:active {
-	color: #CB3235;
-}
-.head{
-	text-align: center;
-	font-wight: bold;
-	font-size:50px;
-	color:black;
-	}
-</style>
-<title>澳門中葡文化</title>
-<table width="347" border="0">
-  <tbody>
-    <tr>
-      <th width="337"  height="65" scope="col"><header class="head">澳門中葡文化</header></th>
-    </tr>
-    <tr>
-      <td height="65"><li><a href="web/history.html" target="_blank">中葡文化歷史</a></li></td>
-    </tr>
-    <tr>
-      <td height="65"><li><a href="web/humanistic.html" target="_blank">中葡人文</a></li></td>
-    </tr>
-    <tr>
-      <td height="65"><li><a href="web/food.html" target="_blank">中葡飲食</a></li></td>
-    </tr>
-	  <tr>
-      <td height="65"><li><a href="web/multiple nationality.html" target="_blank">多重國籍</a></li></td>
-    </tr>
-  </tbody>
-</table>
-<h3><a href="text/Experimental_Report.pdf">實驗報告</a></h3>
-<h3><a href="http://deng-zihan.gitee.io/personal-web-page-1">返回寝室主頁</a></h3>
-</html>
-
-	
-
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="图书管理数据库ER图" id="qOZzJ8hI5BfFtM3vkvfu" parent="">
+    <mxGraphModel dx="1422" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="70" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-3" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="270" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-4" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-5" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="170" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-6" value="User\n-\nID\nName\nType" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="152.5" width="100" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-7" value="Administrator\n-\nID\nName" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="150" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-8" value="Book\n-\nISBN\nTitle\nAuthor\nPublisher\nPublish_Date\nQuantity" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="345" width="120" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-9" value="Borrow_Record\n-\nID\nUser_ID\nBook_ISBN\nBorrow_Date\nDue_Date\nReturn_Date\nOverdue_Days\nFine_Amount" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="345" width="150" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="lEUKWjkXNpKjJ27CZHc4-10" value="" edge="1" parent="1" source="lEUKWjkXNpKjJ27CZHc4-6" target="lEUKWjkXNpKjJ27CZHc4-9">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="lEUKWjkXNpKjJ27CZHc4-11" value="" edge="1" parent="1" source="lEUKWjkXNpKjJ27CZHc4-7" target="lEUKWjkXNpKjJ27CZHc4-9">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="lEUKWjkXNpKjJ27CZHc4-12" value="" edge="1" parent="1" source="lEUKWjkXNpKjJ27CZHc4-8" target="lEUKWjkXNpKjJ27CZHc4-9">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>
